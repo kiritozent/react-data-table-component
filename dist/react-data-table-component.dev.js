@@ -5644,7 +5644,7 @@ function _templateObject2$a() {
 }
 
 function _templateObject$n() {
-  var data = _taggedTemplateLiteral(["\n  cursor: pointer;\n  height: 24px;\n  min-width: 24px;\n  user-select: none;\n  paddingRight: 24px;\n  padding-left: 8px;\n  box-sizing: content-box;\n  font-size: inherit;\n  color: inherit;\n  border: none;\n  background-color: transparent;\n  appearance: none;\n\n  &::-ms-expand {\n    display: none;\n  }\n\n  &:disabled::-ms-expand {\n    background: #f60;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  cursor: pointer;\n  height: 24px;\n  min-width: 24px;\n  user-select: none;\n  padding-right: 24px;\n  padding-left: 8px;\n  box-sizing: content-box;\n  font-size: inherit;\n  color: inherit;\n  border: none;\n  background-color: transparent;\n  appearance: none;\n\n  &::-ms-expand {\n    display: none;\n  }\n\n  &:disabled::-ms-expand {\n    background: #f60;\n  }\n"]);
 
   _templateObject$n = function _templateObject() {
     return data;
