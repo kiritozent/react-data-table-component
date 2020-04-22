@@ -8,16 +8,12 @@ const SelectControl = styled.select`
   min-width: 24px;
   user-select: none;
   padding-left: 8px;
-  padding-right: 12px;
   box-sizing: content-box;
   font-size: inherit;
   color: inherit;
   border: none;
   background-color: transparent;
   appearance: none;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 
   &::-ms-expand {
     display: none;
@@ -30,17 +26,17 @@ const SelectControl = styled.select`
 
 const SelectWrapper = styled.div`
   position: relative;
-  flex-shrink: 0;
   font-size: inherit;
   color: inherit;
-  margin-top: 1px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
   svg {
     color: inherit;
     fill: currentColor;
     width: 24px;
     height: 24px;
-    display: inline-block;
     user-select: none;
     pointer-events: none;
   }
