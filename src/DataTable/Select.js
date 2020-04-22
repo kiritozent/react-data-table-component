@@ -7,6 +7,7 @@ const SelectControl = styled.select`
   height: 24px;
   min-width: 24px;
   user-select: none;
+  paddingRight: 24px;
   padding-left: 8px;
   box-sizing: content-box;
   font-size: inherit;
@@ -35,6 +36,8 @@ const SelectWrapper = styled.div`
   svg {
     color: inherit;
     fill: currentColor;
+    position: absolute;
+    right: 0px;
     width: 24px;
     height: 24px;
     user-select: none;
