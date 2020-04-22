@@ -182,6 +182,7 @@ Pagination.propTypes = {
   onChangePage: PropTypes.func.isRequired,
   onChangeRowsPerPage: PropTypes.func.isRequired,
   currentPage: PropTypes.number.isRequired,
+  style: PropTypes.any.isRequired,
 };
 
 export default Pagination;
