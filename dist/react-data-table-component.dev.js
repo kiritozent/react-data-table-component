@@ -5743,7 +5743,8 @@ var Pagination = function Pagination(_ref) {
       rowCount = _ref.rowCount,
       onChangePage = _ref.onChangePage,
       onChangeRowsPerPage = _ref.onChangeRowsPerPage,
-      currentPage = _ref.currentPage;
+      currentPage = _ref.currentPage,
+      style = _ref.style;
 
   var _useTableContext = useTableContext(),
       data = _useTableContext.data,
@@ -5796,6 +5797,7 @@ var Pagination = function Pagination(_ref) {
   }
 
   return /*#__PURE__*/React__default.createElement(PaginationWrapper, {
+    style: style,
     className: "rdt_Pagination"
   }, !options.noRowsPerPage && /*#__PURE__*/React__default.createElement(React__default.Fragment, null, /*#__PURE__*/React__default.createElement(RowLabel, null, options.rowsPerPageText), /*#__PURE__*/React__default.createElement(Select, {
     onChange: handleRowsPerPage,
@@ -5840,7 +5842,8 @@ Pagination.propTypes = {
   rowCount: propTypes.number.isRequired,
   onChangePage: propTypes.func.isRequired,
   onChangeRowsPerPage: propTypes.func.isRequired,
-  currentPage: propTypes.number.isRequired
+  currentPage: propTypes.number.isRequired,
+  style: propTypes.any.isRequired
 };
 
 function useFirstUpdate(fn, inputs) {
@@ -6611,6 +6614,7 @@ var DataTable = React.memo(function (_ref) {
       title = _ref.title,
       actions = _ref.actions,
       keyField = _ref.keyField,
+      paginationStyle = _ref.paginationStyle,
       striped = _ref.striped,
       highlightOnHover = _ref.highlightOnHover,
       pointerOnHover = _ref.pointerOnHover,
@@ -6953,13 +6957,14 @@ var DataTable = React.memo(function (_ref) {
       selected: selected,
       selectableRowsHighlight: selectableRowsHighlight
     });
-  })))), enabledPagination && /*#__PURE__*/React__default.createElement(Pagination$1, {
+  }))))), enabledPagination && /*#__PURE__*/React__default.createElement(Pagination$1, {
     onChangePage: handleChangePage,
     onChangeRowsPerPage: handleChangeRowsPerPage,
     rowCount: paginationTotalRows || data.length,
     currentPage: currentPage,
-    rowsPerPage: rowsPerPage
-  }))));
+    rowsPerPage: rowsPerPage,
+    style: paginationStyle
+  })));
 });
 DataTable.propTypes = propTypes$1;
 DataTable.defaultProps = defaultProps;
