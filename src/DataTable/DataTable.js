@@ -390,17 +390,16 @@ const DataTable = memo(({
                 </TableBody>
               )}
             </Table>
-
-            {enabledPagination && (
-              <Pagination
-                onChangePage={handleChangePage}
-                onChangeRowsPerPage={handleChangeRowsPerPage}
-                rowCount={paginationTotalRows || data.length}
-                currentPage={currentPage}
-                rowsPerPage={rowsPerPage}
-              />
-            )}
           </TableWrapper>
+          {enabledPagination && (
+            <Pagination
+              onChangePage={handleChangePage}
+              onChangeRowsPerPage={handleChangeRowsPerPage}
+              rowCount={paginationTotalRows || data.length}
+              currentPage={currentPage}
+              rowsPerPage={rowsPerPage}
+            />
+          )}
         </ResponsiveWrapper>
       </DataTableProvider>
     </ThemeProvider>

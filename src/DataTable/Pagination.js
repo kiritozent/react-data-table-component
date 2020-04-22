@@ -16,7 +16,7 @@ const defaultComponentOptions = {
 const PaginationWrapper = styled.nav`
   display: flex;
   flex: 1 1 auto;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
   box-sizing: border-box;
   padding-right: 8px;
