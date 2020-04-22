@@ -15,7 +15,9 @@ const SelectControl = styled.select`
   border: none;
   background-color: transparent;
   appearance: none;
-  direction: ltr;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
   &::-ms-expand {
     display: none;
@@ -34,8 +36,6 @@ const SelectWrapper = styled.div`
   margin-top: 1px;
 
   svg {
-    top: 0;
-    right: 0;
     color: inherit;
     fill: currentColor;
     width: 24px;
