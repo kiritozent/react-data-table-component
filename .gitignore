@@ -58,8 +58,8 @@ typings/
 .env
 
 # dist
-dist/*
-!dist/index.js
+# dist/*
+# !dist/index.js
 
 # Storybook
 storybook-static
