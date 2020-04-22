@@ -33,6 +33,7 @@ export interface IDataTableProps<T> {
     sortDirection: 'asc' | 'desc'
   ) => T[];
   sortServer?: boolean;
+  paginationStyle?: CSSProperties;
   pagination?: boolean;
   paginationServer?: boolean;
   paginationDefaultPage?: number;

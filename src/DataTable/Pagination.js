@@ -59,6 +59,7 @@ const Pagination = ({
   onChangePage,
   onChangeRowsPerPage,
   currentPage,
+  style,
 }) => {
   const {
     data,
@@ -110,7 +111,7 @@ const Pagination = ({
   }
 
   return (
-    <PaginationWrapper className="rdt_Pagination">
+    <PaginationWrapper style={style} className="rdt_Pagination">
       {!options.noRowsPerPage && (
         <>
           <RowLabel>{options.rowsPerPageText}</RowLabel>

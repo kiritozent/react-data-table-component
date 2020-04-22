@@ -29,6 +29,7 @@ const DataTable = memo(({
   title,
   actions,
   keyField,
+  paginationStyle,
   striped,
   highlightOnHover,
   pointerOnHover,
@@ -391,16 +392,17 @@ const DataTable = memo(({
               )}
             </Table>
           </TableWrapper>
-          {enabledPagination && (
-            <Pagination
-              onChangePage={handleChangePage}
-              onChangeRowsPerPage={handleChangeRowsPerPage}
-              rowCount={paginationTotalRows || data.length}
-              currentPage={currentPage}
-              rowsPerPage={rowsPerPage}
-            />
-          )}
         </ResponsiveWrapper>
+        {enabledPagination && (
+          <Pagination
+            onChangePage={handleChangePage}
+            onChangeRowsPerPage={handleChangeRowsPerPage}
+            rowCount={paginationTotalRows || data.length}
+            currentPage={currentPage}
+            rowsPerPage={rowsPerPage}
+            style={paginationStyle}
+          />
+        )}
       </DataTableProvider>
     </ThemeProvider>
   );
