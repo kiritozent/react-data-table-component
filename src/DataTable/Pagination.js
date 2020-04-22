@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { CSSProperties } from 'styled-components';
 import { useTableContext } from './DataTableContext';
 import Select from './Select';
 import { getNumberOfPages, detectRTL } from './util';
@@ -16,7 +16,7 @@ const defaultComponentOptions = {
 const PaginationWrapper = styled.nav`
   display: flex;
   flex: 1 1 auto;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
   box-sizing: border-box;
   padding-right: 8px;
@@ -182,7 +182,7 @@ Pagination.propTypes = {
   onChangePage: PropTypes.func.isRequired,
   onChangeRowsPerPage: PropTypes.func.isRequired,
   currentPage: PropTypes.number.isRequired,
-  style: PropTypes.any.isRequired,
+  style: PropTypes.shape(CSSProperties).isRequired,
 };
 
 export default Pagination;

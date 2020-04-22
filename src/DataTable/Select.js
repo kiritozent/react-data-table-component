@@ -37,7 +37,6 @@ const SelectWrapper = styled.div`
     top: 0;
     right: 0;
     color: inherit;
-    position: absolute;
     fill: currentColor;
     width: 24px;
     height: 24px;

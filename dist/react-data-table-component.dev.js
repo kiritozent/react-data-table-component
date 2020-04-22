@@ -5634,7 +5634,7 @@ var DropDownIcon = (function () {
 });
 
 function _templateObject2$a() {
-  var data = _taggedTemplateLiteral(["\n  position: relative;\n  flex-shrink: 0;\n  font-size: inherit;\n  color: inherit;\n  margin-top: 1px;\n\n  svg {\n    top: 0;\n    right: 0;\n    color: inherit;\n    position: absolute;\n    fill: currentColor;\n    width: 24px;\n    height: 24px;\n    display: inline-block;\n    user-select: none;\n    pointer-events: none;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  position: relative;\n  flex-shrink: 0;\n  font-size: inherit;\n  color: inherit;\n  margin-top: 1px;\n\n  svg {\n    top: 0;\n    right: 0;\n    color: inherit;\n    fill: currentColor;\n    width: 24px;\n    height: 24px;\n    display: inline-block;\n    user-select: none;\n    pointer-events: none;\n  }\n"]);
 
   _templateObject2$a = function _templateObject2() {
     return data;
@@ -5710,7 +5710,7 @@ function _templateObject2$b() {
 }
 
 function _templateObject$o() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex: 1 1 auto;\n  justify-content: flex-start;\n  align-items: center;\n  box-sizing: border-box;\n  padding-right: 8px;\n  padding-left: 8px;\n  width: 100%;\n  ", ";\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex: 1 1 auto;\n  justify-content: flex-end;\n  align-items: center;\n  box-sizing: border-box;\n  padding-right: 8px;\n  padding-left: 8px;\n  width: 100%;\n  ", ";\n"]);
 
   _templateObject$o = function _templateObject() {
     return data;
@@ -5843,7 +5843,7 @@ Pagination.propTypes = {
   onChangePage: propTypes.func.isRequired,
   onChangeRowsPerPage: propTypes.func.isRequired,
   currentPage: propTypes.number.isRequired,
-  style: propTypes.any.isRequired
+  style: propTypes.shape(styled.CSSProperties).isRequired
 };
 
 function useFirstUpdate(fn, inputs) {
